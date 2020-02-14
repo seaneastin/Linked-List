@@ -4,9 +4,10 @@ template <typename T>
 
 class Node
 {
+public:
 	T info;
 	Node<T> * next;
-	Node<T> * Previous;
+	Node<T> * previous;
 
 
 };

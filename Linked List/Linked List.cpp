@@ -3,6 +3,7 @@
 
 #include "pch.h"
 #include <iostream>
+#include "UnorderedList.h"
 
 
 
@@ -11,9 +12,13 @@ int main()
 {
     std::cout << "Hello World!\n"; 
 
+	UnorderedList<int> mylist;
 
+	mylist.insertFirst(10);
 
+	mylist.insertLast(40);
 
+	mylist.insertFirst(50);
 
 }
 
