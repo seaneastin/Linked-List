@@ -27,7 +27,7 @@
     <ClInclude Include="UnorderedList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Iterators.h">
+    <ClInclude Include="Iterator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
