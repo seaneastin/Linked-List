@@ -5,10 +5,19 @@ template <typename T>
 class UnorderedList : List<T>
 {
 public:
+
+	void search(const T &);
 	void insertFirst(const T&);
 	void insertLast(const T&);
+	void deleteNode(const T&);
 
 };
+
+template<typename T>
+void UnorderedList<T>::search(const T &tempinfo)
+{
+
+}
 
 template<typename T>
 void UnorderedList<T>::insertFirst(const T &tempInfo)
@@ -44,4 +53,9 @@ void UnorderedList<T>::insertLast(const T &tempinfo)
 	node->previous = this->m_last; 
 	this->m_last = node;
 	this->m_count++;
+}
+
+template<typename T>
+inline void UnorderedList<T>::deleteNode(const T &)
+{
 }

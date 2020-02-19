@@ -6,10 +6,11 @@ template<typename T>
 class Iterator
 {
 private:
-	Node* current;
+	Node<T>* current;
 
 
 public:
+
 	Iterator();
 	Iterator(Node<T>* ptr);
 	T operator*();
@@ -17,11 +18,13 @@ public:
 	Iterator operator--();
 	bool operator==(const Iterator<T>&)const;
 	bool operator!=(const Iterator<T>&)const;
+
 };
 
 template<typename T>
-inline Iterator<T>::Iterator()
+Iterator<T>::Iterator()
 {
+
 }
 
 template<typename T>
@@ -31,15 +34,41 @@ Iterator<T>::Iterator(Node<T>* ptr)
 }
 
 template<typename T>
-inline T Iterator<T>::operator*()
+T Iterator<T>::operator*()
 {
-	return T();
+
 }
 
 template<typename T>
 Iterator<T> Iterator<T>::operator++()
 {
-	return Iterator();
+	if (current->next != nullptr)
+	{
+		current = current->next;
+	}
+
+}
+
+template<typename T>
+Iterator<T> Iterator<T>::operator--()
+{
+	if (current->next != nullptr)
+	{
+		current = current->previous;
+	}
+
+}
+
+template<typename T>
+bool Iterator<T>::operator==(const Iterator<T>&info) const
+{
+	current->info = info;
+}
+
+template<typename T>
+bool Iterator<T>::operator!=(const Iterator<T>&) const
+{
+
 }
 
 
