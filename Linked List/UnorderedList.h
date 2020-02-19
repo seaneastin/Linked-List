@@ -16,7 +16,13 @@ public:
 template<typename T>
 void UnorderedList<T>::search(const T &tempinfo)
 {
-
+	for (auto i = this->begin(); i != this->end(); ++i)
+	{
+		if (*i == tempinfo)
+		{
+			std::cout << "success" << std::endl;
+		}
+	}
 }
 
 template<typename T>
@@ -56,6 +62,17 @@ void UnorderedList<T>::insertLast(const T &tempinfo)
 }
 
 template<typename T>
-inline void UnorderedList<T>::deleteNode(const T &)
+inline void UnorderedList<T>::deleteNode(const T &tempname)
 {
+	Node<T> * F = &(*this->m_first);
+	for (auto i = this->begin(); i != this->end(); ++i)
+	{
+		if (*i  == tempname)
+		{
+
+		}
+
+
+		F->next;
+	}
 }

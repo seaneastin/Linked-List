@@ -36,7 +36,7 @@ Iterator<T>::Iterator(Node<T>* ptr)
 template<typename T>
 T Iterator<T>::operator*()
 {
-
+	return current->info;
 }
 
 template<typename T>
@@ -46,7 +46,7 @@ Iterator<T> Iterator<T>::operator++()
 	{
 		current = current->next;
 	}
-
+	return *this;
 }
 
 template<typename T>
@@ -56,19 +56,27 @@ Iterator<T> Iterator<T>::operator--()
 	{
 		current = current->previous;
 	}
-
+	return *this;
 }
 
 template<typename T>
-bool Iterator<T>::operator==(const Iterator<T>&info) const
+bool Iterator<T>::operator==(const Iterator<T>&tempname) const
 {
-	current->info = info;
+	if (current->info == tempname.current->info)
+	{
+		return true;
+	}
+	return false;
 }
 
 template<typename T>
-bool Iterator<T>::operator!=(const Iterator<T>&) const
+bool Iterator<T>::operator!=(const Iterator<T>&tempname) const
 {
-
+	if (current->info == tempname.current->info)
+	{
+		return false;
+	}
+	return true;
 }
 
 

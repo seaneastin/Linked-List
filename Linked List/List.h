@@ -20,6 +20,9 @@ public:
 	virtual void insertLast(const T&) = 0;
 
 
+	Iterator<T> begin();
+	Iterator<T> end();
+
 	bool isEmpty();
 
 };
@@ -34,6 +37,18 @@ template<typename T>
 T List<T>::back()
 {
 	return m_last;
+}
+
+template<typename T>
+Iterator<T> List<T>::begin()
+{
+	return Iterator<T>(m_first);
+}
+
+template<typename T>
+Iterator<T> List<T>::end()
+{
+	return Iterator<T>(m_last);
 }
 
 template<typename T>

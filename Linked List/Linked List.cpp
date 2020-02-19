@@ -20,7 +20,7 @@ int main()
 
 	mylist.insertFirst(50);
 
-	
+	mylist.deleteNode(10);
 
 }
 
