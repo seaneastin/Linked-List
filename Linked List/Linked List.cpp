@@ -16,10 +16,6 @@ int main()
 
 	mylist.insertFirst(10);
 
-	mylist.insertLast(40);
-
-	mylist.insertFirst(50);
-
 	mylist.deleteNode(10);
 
 }

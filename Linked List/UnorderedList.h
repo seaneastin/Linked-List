@@ -67,12 +67,23 @@ inline void UnorderedList<T>::deleteNode(const T &tempname)
 	Node<T> * F = &(*this->m_first);
 	for (auto i = this->begin(); i != this->end(); ++i)
 	{
-		if (*i  == tempname)
+		if (*i == tempname)
 		{
+			if (F = *this->m_first)
+			{
+				  
+			}
+			else if (F = *this->m_last)
+			{
 
+			}
+			else
+			{
+
+			}
 		}
 
 
-		F->next;
+		F = F->next;
 	}
 }
