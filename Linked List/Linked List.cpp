@@ -15,7 +15,8 @@ int main()
 	UnorderedList<int> mylist;
 
 	mylist.insertFirst(10);
-
+	mylist.insertLast(15);
+	mylist.insertLast(20);
 	mylist.deleteNode(10);
 
 }
