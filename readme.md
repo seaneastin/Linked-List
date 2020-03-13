@@ -14,10 +14,6 @@
 
 	- **Problem Specifications** :
 
-2. Input Information(All information being given to the application)
-
-- you use the keyboard to pick options
-
 3.  Output Information
 - the program displays in a console window
 
