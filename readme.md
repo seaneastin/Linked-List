@@ -20,11 +20,11 @@
 
 
 
-1. _System Architecture_(This is where you describe how your application flows. This should break down the main game loop and how the application works from start to end)
+1. _System Architecture_
 
  
 
-3. ### Object Information(All classes and their atrributes shsould be described here.)
+3. ### Object Information
 
    **File**: Node.h
 
